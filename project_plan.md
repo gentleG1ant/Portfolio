@@ -17,10 +17,10 @@
 - [x] Build `Skills.tsx` (Interactive glass cards mapped from data).
 - [x] Build `Education.tsx` (Timeline view mapped from data).
 
-## Phase 4: Work & Achievements (⏳ PENDING)
-- [ ] Build `Projects.tsx` (Cards with tech stack badges and modal stubs).
-- [ ] Build `Certifications.tsx` (Grid of glowing cards).
-- [ ] Build `Contact.tsx` (Direct links, recruiter-first layout).
+## Phase 4: Work & Achievements (✅ DONE)
+- [x] Build `Projects.tsx` (Cards with tech stack badges and modal stubs).
+- [x] Build `Certifications.tsx` (Grid of glowing cards).
+- [x] Build `Contact.tsx` (Direct links, recruiter-first layout).
 
 ## Phase 5: Final Polish (⏳ PENDING)
 - [ ] Implement `ResumeModal.tsx` and `ProjectModal.tsx`.
