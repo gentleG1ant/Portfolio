@@ -30,12 +30,52 @@ function App() {
 
       <Modal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} title="Resume Preview">
         <div className="flex flex-col items-center">
-          <div className="w-full bg-surface/50 p-6 rounded-lg border border-slate-700 mb-6 text-center">
-            <h3 className="text-xl font-bold text-slate-200 mb-2">{portfolioData.personalInfo.name}</h3>
-            <p className="text-primary font-mono text-sm mb-4">{portfolioData.personalInfo.title}</p>
-            <p className="text-slate-400 text-sm">
-              Resume preview is integrated. In a production environment, this window displays an interactive PDF viewer or direct HTML resume layout.
-            </p>
+          <div className="w-full text-left space-y-6 mb-8">
+            <div className="border-b border-slate-700 pb-4">
+              <h3 className="text-2xl font-bold text-slate-100">{portfolioData.personalInfo.name}</h3>
+              <p className="text-primary font-mono text-sm">{portfolioData.personalInfo.title}</p>
+              <div className="flex gap-4 text-xs text-slate-400 mt-2 font-mono">
+                <span>{portfolioData.personalInfo.email}</span>
+                <span>{portfolioData.personalInfo.phone}</span>
+                <span>{portfolioData.personalInfo.location}</span>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wider mb-2 text-primary">Objective</h4>
+              <p className="text-sm text-slate-400 leading-relaxed">{portfolioData.personalInfo.careerObjective}</p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wider mb-2 text-primary">Education</h4>
+              <ul className="space-y-3 text-sm">
+                {portfolioData.education.map((edu, idx) => (
+                  <li key={idx} className="flex justify-between items-start">
+                    <div>
+                      <strong className="text-slate-200 block">{edu.degree}</strong>
+                      <span className="text-slate-400">{edu.institution} {edu.score ? `— ${edu.score}` : ''}</span>
+                    </div>
+                    <span className="font-mono text-secondary whitespace-nowrap">{edu.year}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wider mb-2 text-primary">Projects</h4>
+              <ul className="space-y-3 text-sm">
+                {portfolioData.projects.map((proj) => (
+                  <li key={proj.id}>
+                    <div className="flex justify-between items-baseline mb-1">
+                      <strong className="text-slate-200">{proj.title}</strong>
+                      <span className="font-mono text-xs text-slate-500">{proj.status}</span>
+                    </div>
+                    <p className="text-slate-400 text-xs mb-1">{proj.summary}</p>
+                    <p className="text-primary/70 text-xs font-mono">{proj.techStack.join(', ')}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
           <div className="flex gap-4">
             <a 
