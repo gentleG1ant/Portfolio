@@ -7,17 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#090D16', // Deep void/near-black
-        surface: 'rgba(15, 23, 42, 0.75)', // Dark surface for cards
+        background: '#000000', // Pitch Black
+        surface: 'rgba(18, 12, 16, 0.75)', // Dark obsidian surface for cards
         primary: {
-          DEFAULT: '#00F0FF', // Electric Cyan / Neon Teal
-          glow: 'rgba(0, 240, 255, 0.15)',
+          DEFAULT: '#FF003C', // Deep Crimson / Neon Red
+          glow: 'rgba(255, 0, 60, 0.2)',
         },
         secondary: {
-          DEFAULT: '#8B5CF6', // Cyber Purple
-          dark: '#7000FF',
+          DEFAULT: '#FF8A00', // Burning Amber / Neon Orange
+          dark: '#CC6E00',
         },
-        highlight: '#10B981', // Emerald Green (active statuses / progress)
+        highlight: '#10B981', // Status indicators
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

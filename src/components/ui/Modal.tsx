@@ -39,7 +39,7 @@ export const Modal = ({ isOpen, onClose, title, children }: ModalProps) => {
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="w-full max-w-2xl max-h-[90vh] overflow-y-auto pointer-events-auto"
             >
-              <div className="glass-panel p-6 sm:p-8 rounded-2xl relative border-primary/30 shadow-[0_0_30px_rgba(0,240,255,0.15)] bg-surface/95">
+              <div className="glass-panel p-6 sm:p-8 rounded-2xl relative border-primary/30 shadow-[0_0_30px_rgba(255,0,60,0.2)] bg-surface/95">
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-bold text-slate-200">{title}</h2>
                   <button 

@@ -23,7 +23,7 @@ export const Education = () => {
                 <div key={index} className="relative flex flex-col md:flex-row items-center">
                   
                   {/* Timeline Node */}
-                  <div className="absolute left-8 md:left-1/2 w-10 h-10 bg-background border-2 border-primary rounded-full md:-translate-x-1/2 flex items-center justify-center shadow-[0_0_15px_rgba(0,240,255,0.4)] z-10 -translate-x-5 md:-translate-x-0">
+                  <div className="absolute left-8 md:left-1/2 w-10 h-10 bg-background border-2 border-primary rounded-full md:-translate-x-1/2 flex items-center justify-center shadow-[0_0_15px_rgba(255,0,60,0.4)] z-10 -translate-x-5 md:-translate-x-0">
                     <GraduationCap size={18} className="text-primary" />
                   </div>
 

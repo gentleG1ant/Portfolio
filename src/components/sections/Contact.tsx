@@ -93,7 +93,7 @@ export const Contact = () => {
 
             <a 
               href={`mailto:${portfolioData.personalInfo.email}`} 
-              className="w-full py-4 bg-primary text-background font-bold text-center rounded-lg hover:bg-primary/90 transition-colors shadow-[0_0_15px_rgba(0,240,255,0.4)]"
+              className="w-full py-4 bg-primary text-background font-bold text-center rounded-lg hover:bg-primary/90 transition-colors shadow-[0_0_15px_rgba(255,0,60,0.4)]"
             >
               Send an Email
             </a>

@@ -18,7 +18,7 @@ export const Certifications = () => {
               key={index} 
               className="glass-card p-6 border-slate-800 flex flex-col items-center text-center group"
             >
-              <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(0,240,255,0.2)]">
+              <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_15px_rgba(255,0,60,0.25)]">
                 <Award size={28} className="text-primary" />
               </div>
               <h3 className="text-lg font-bold text-slate-200 mb-1">{cert.name}</h3>

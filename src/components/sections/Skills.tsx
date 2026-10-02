@@ -33,7 +33,7 @@ export const Skills = () => {
                   {skillGroup.items.map((skill) => (
                     <span 
                       key={skill}
-                      className="px-4 py-2 bg-background/80 border border-primary/20 rounded-md text-sm font-mono text-slate-300 shadow-[0_0_10px_rgba(0,240,255,0.05)] hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,240,255,0.2)] hover:-translate-y-0.5 cursor-default"
+                      className="px-4 py-2 bg-background/80 border border-primary/20 rounded-md text-sm font-mono text-slate-300 shadow-[0_0_10px_rgba(255,0,60,0.08)] hover:border-primary hover:text-primary transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,0,60,0.25)] hover:-translate-y-0.5 cursor-default"
                     >
                       {skill}
                     </span>

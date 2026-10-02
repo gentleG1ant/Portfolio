@@ -56,7 +56,7 @@ export const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {highlights.map((item, idx) => (
               <div key={idx} className="glass-card p-6 border-slate-800">
-                <div className="bg-surface p-3 rounded-lg inline-block mb-4 border border-primary/20 shadow-[0_0_10px_rgba(0,240,255,0.1)]">
+                <div className="bg-surface p-3 rounded-lg inline-block mb-4 border border-primary/20 shadow-[0_0_10px_rgba(255,0,60,0.15)]">
                   {item.icon}
                 </div>
                 <h4 className="text-lg font-semibold text-slate-200 mb-2">{item.title}</h4>

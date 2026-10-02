@@ -139,7 +139,7 @@ export const Projects = () => {
                   href={selectedProject.liveUrl} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-6 py-2 bg-primary text-background font-semibold rounded hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-[0_0_15px_rgba(0,240,255,0.4)]"
+                  className="px-6 py-2 bg-primary text-background font-semibold rounded hover:bg-primary/90 transition-colors flex items-center gap-2 shadow-[0_0_15px_rgba(255,0,60,0.4)]"
                 >
                   <ExternalLink size={18} /> Live Demo
                 </a>

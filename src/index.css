@@ -12,7 +12,7 @@
 
 @layer components {
   .glass-panel {
-    @apply bg-surface backdrop-blur-xl border border-primary-glow shadow-[0_0_15px_rgba(0,240,255,0.05)];
+    @apply bg-surface backdrop-blur-xl border border-primary-glow shadow-[0_0_15px_rgba(255,0,60,0.08)];
   }
   
   .glass-card {
@@ -24,6 +24,6 @@
   }
 
   .neon-glow {
-    @apply shadow-[0_0_15px_rgba(0,240,255,0.4)];
+    @apply shadow-[0_0_15px_rgba(255,0,60,0.4)];
   }
 }
