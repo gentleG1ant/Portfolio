@@ -1,5 +1,5 @@
 import { Code, Server, Database, Brain } from 'lucide-react';
-import { portfolioData } from '../../data/portfolioData';
+
 
 export const About = () => {
   const highlights = [
