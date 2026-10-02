@@ -7,10 +7,10 @@
 - [x] Configure `tailwind.config.js` and `index.css` for Dark + Neon theme.
 - [x] Implement Codespace-friendly environment scripts (`setup.js`, `ai.md`).
 
-## Phase 2: Core Layout & Hero (⏳ PENDING)
-- [ ] Build `Navbar.tsx` (Floating, Glassmorphism, smooth scrolling).
-- [ ] Build `Hero.tsx` (Greeting, Role badge, background effects, contact chips).
-- [ ] Build `Footer.tsx` (Minimalist, dark).
+## Phase 2: Core Layout & Hero (✅ DONE)
+- [x] Build `Navbar.tsx` (Floating, Glassmorphism, smooth scrolling).
+- [x] Build `Hero.tsx` (Greeting, Role badge, background effects, contact chips).
+- [x] Build `Footer.tsx` (Minimalist, dark).
 
 ## Phase 3: Identity & Skills (⏳ PENDING)
 - [ ] Build `About.tsx` (MCA highlights, core strengths).

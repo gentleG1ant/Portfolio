@@ -1,15 +1,32 @@
 import React from 'react';
+import { Navbar } from './components/layout/Navbar';
+import { Footer } from './components/layout/Footer';
+import { Hero } from './components/sections/Hero';
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col gap-4">
-      <h1 className="text-5xl font-bold neon-text">Raj Aryan's Portfolio</h1>
-      <p className="text-primary text-xl">Phase 1: Setup Complete!</p>
-      <div className="glass-card p-6 max-w-md text-center">
-        <p className="text-slate-300">
-          Tailwind CSS, Framer Motion, and global styles are successfully configured.
-        </p>
-      </div>
+    <div className="relative min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        {/* Placeholder for future sections */}
+        <section id="about" className="min-h-[50vh] flex items-center justify-center border-t border-slate-800">
+          <p className="text-slate-500 font-mono">#about section (Pending)</p>
+        </section>
+        <section id="skills" className="min-h-[50vh] flex items-center justify-center border-t border-slate-800">
+          <p className="text-slate-500 font-mono">#skills section (Pending)</p>
+        </section>
+        <section id="projects" className="min-h-[50vh] flex items-center justify-center border-t border-slate-800">
+          <p className="text-slate-500 font-mono">#projects section (Pending)</p>
+        </section>
+        <section id="education" className="min-h-[50vh] flex items-center justify-center border-t border-slate-800">
+          <p className="text-slate-500 font-mono">#education section (Pending)</p>
+        </section>
+        <section id="contact" className="min-h-[50vh] flex items-center justify-center border-t border-slate-800">
+          <p className="text-slate-500 font-mono">#contact section (Pending)</p>
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 }
