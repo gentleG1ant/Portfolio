@@ -22,7 +22,7 @@
 - [x] Build `Certifications.tsx` (Grid of glowing cards).
 - [x] Build `Contact.tsx` (Direct links, recruiter-first layout).
 
-## Phase 5: Final Polish (⏳ PENDING)
-- [ ] Implement `ResumeModal.tsx` and `ProjectModal.tsx`.
-- [ ] Comprehensive responsive and accessibility (a11y) check.
-- [ ] Update `README.md` with full usage and customization guides.
+## Phase 5: Final Polish (✅ DONE)
+- [x] Implement `ResumeModal.tsx` and `ProjectModal.tsx`.
+- [x] Comprehensive responsive and accessibility (a11y) check.
+- [x] Update `README.md` with full usage and customization guides.

@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { portfolioData } from '../../data/portfolioData';
 
-export const Navbar = () => {
+interface NavbarProps {
+  onResumeClick: () => void;
+}
+
+export const Navbar = ({ onResumeClick }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,12 +42,12 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <a 
-                href="#resume" 
+              <button 
+                onClick={onResumeClick}
                 className="px-4 py-2 rounded-md text-sm font-medium border border-primary text-primary hover:bg-primary/10 transition-colors"
               >
                 Resume
-              </a>
+              </button>
             </div>
           </div>
           
@@ -73,13 +77,12 @@ export const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="#resume" 
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 text-primary font-medium"
+            <button 
+              onClick={() => { setIsOpen(false); onResumeClick(); }}
+              className="block w-full text-left px-3 py-2 text-primary font-medium"
             >
               Resume
-            </a>
+            </button>
           </div>
         </div>
       )}

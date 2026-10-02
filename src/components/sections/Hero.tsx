@@ -10,7 +10,11 @@ const LinkedinIcon = ({ size = 16 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
 );
 
-export const Hero = () => {
+interface HeroProps {
+  onResumeClick: () => void;
+}
+
+export const Hero = ({ onResumeClick }: HeroProps) => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background Glow / Effects */}
@@ -49,12 +53,12 @@ export const Hero = () => {
             >
               Explore Projects
             </a>
-            <a 
-              href="#resume"
+            <button 
+              onClick={onResumeClick}
               className="px-8 py-3 glass-panel text-slate-200 font-semibold rounded-md hover:border-primary/50 transition-colors"
             >
               View Resume
-            </a>
+            </button>
           </div>
 
           {/* Contact Chips */}
