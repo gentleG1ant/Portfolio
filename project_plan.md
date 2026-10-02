@@ -12,10 +12,10 @@
 - [x] Build `Hero.tsx` (Greeting, Role badge, background effects, contact chips).
 - [x] Build `Footer.tsx` (Minimalist, dark).
 
-## Phase 3: Identity & Skills (⏳ PENDING)
-- [ ] Build `About.tsx` (MCA highlights, core strengths).
-- [ ] Build `Skills.tsx` (Interactive glass cards mapped from data).
-- [ ] Build `Education.tsx` (Timeline view mapped from data).
+## Phase 3: Identity & Skills (✅ DONE)
+- [x] Build `About.tsx` (MCA highlights, core strengths).
+- [x] Build `Skills.tsx` (Interactive glass cards mapped from data).
+- [x] Build `Education.tsx` (Timeline view mapped from data).
 
 ## Phase 4: Work & Achievements (⏳ PENDING)
 - [ ] Build `Projects.tsx` (Cards with tech stack badges and modal stubs).
